@@ -10,9 +10,9 @@ export class RegistrationService {
 
   constructor(private  _http:HttpClient) { }
   public loginUseFromRemote(user:User):Observable<any>{
-    return this._http.post<any>("http://localhost:8082/api/login/registration", user);
+    return this._http.post<any>("http://localhost:8083/api/login/registration", user);
   }
   public registerUserFromRemote(user:User):Observable<any>{
-    return this._http.post<any>("http://localhost:8082/api/login/registration",user );
+    return this._http.post<any>("http://localhost:8083/api/login/registration",user );
   }
 }
